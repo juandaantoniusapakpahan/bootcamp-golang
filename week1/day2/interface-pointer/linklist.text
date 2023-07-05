@@ -1,0 +1,73 @@
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
+type List struct {
+	head *ListNode
+}
+
+func (list *List) RemoveList(val int) {
+	if list.head == nil {
+		return
+	}
+	var (
+		rear = list.head
+		pre  = new(ListNode)
+		curr = pre
+	)
+
+	pre = list.head
+
+	for rear != nil {
+		if rear.Val == val {
+			curr.Next = curr.Next.Next
+			rear = curr.Next
+		} else {
+			curr = rear
+			rear = rear.Next
+		}
+	}
+
+	pre = pre.Next
+
+}
+func (list *List) AddList(val int) {
+	newNode := &ListNode{Val: val}
+	if list.head == nil {
+		list.head = newNode
+		return
+	}
+
+	cur := list.head
+	for cur.Next != nil {
+		cur = cur.Next
+	}
+	cur.Next = newNode
+	return
+}
+
+func main() {
+	list := &List{}
+	list.AddList(1)
+	list.AddList(2)
+	list.AddList(3)
+	list.AddList(4)
+	list.AddList(5)
+	list.AddList(6)
+	list.AddList(1)
+	printList(list)
+	list.RemoveList(1)
+	printList(list)
+
+}
+
+func printList(l *List) {
+	cur := l.head
+	for cur != nil {
+		fmt.Printf("%d ", cur.Val)
+		cur = cur.Next
+	}
+	fmt.Println()
+}
