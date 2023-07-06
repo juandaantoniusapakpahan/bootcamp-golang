@@ -60,26 +60,25 @@ func (l *List) Remove(val int) {
 
 func (l *List) RemoveBySame(val int) {
 
-	var (
-		rear = l.head
-		pre  = new(LinkList)
-		cur  = pre
-	)
+	if l.head == nil {
+		fmt.Println("Data tidak ada")
+		return
+	}
 
-	pre.Next = l.head
+	if l.head.Val == val {
+		l.head = l.head.Next
+	}
 
-	for rear != nil {
-		if rear.Val == val {
+	cur := l.head
+
+	for cur.Next != nil {
+		if cur.Next.Val == val {
 			cur.Next = cur.Next.Next
-			rear = cur.Next
-
 		} else {
-			cur = rear
-			rear = rear.Next
+			cur = cur.Next
 		}
 
 	}
-	pre.Next = pre.Next.Next
 
 }
 func (l *List) TolongPrint() {
@@ -104,6 +103,7 @@ func main() {
 	list.Add(4)
 	list.Add(1)
 	list.Add(4)
+	list.Add(5)
 
 	list.TolongPrint()
 	fmt.Println()
