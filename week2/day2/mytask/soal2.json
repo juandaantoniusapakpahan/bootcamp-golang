@@ -1,0 +1,39 @@
+{
+  "profile": [
+    {
+      "first_name": "Budi",
+      "last_name": "Shark",
+      "location": "Ocean",
+      "online": true,
+      "followers": 987
+    },
+    {
+      "first_name": "Bobob",
+      "last_name": "Shark",
+      "location": "Ocean",
+      "online": true,
+      "followers": 987
+    },
+    {
+      "first_name": "Jimmy",
+      "last_name": "Shark",
+      "location": "Ocean",
+      "online": true,
+      "followers": 987
+    },
+    {
+      "first_name": "Cika",
+      "last_name": "Shark",
+      "location": "Ocean",
+      "online": true,
+      "followers": 987
+    },
+    {
+      "first_name": "Cuka",
+      "last_name": "Shark",
+      "location": "Ocean",
+      "online": true,
+      "followers": 987
+    }
+  ]
+}

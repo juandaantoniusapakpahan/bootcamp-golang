@@ -1,0 +1,25 @@
+{
+  "employees": [
+    {
+      "employee_id": "employ-f8262bca-ea95-4669-8e45-83c4c6b56fe9",
+      "name_employee": "Juanda",
+      "gender": "L",
+      "grade": 2,
+      "is_married": true
+    },
+    {
+      "employee_id": "employ-df1d009f-99fd-4fff-a967-62e83609659a",
+      "name_employee": "Mely",
+      "gender": "P",
+      "grade": 2,
+      "is_married": true
+    },
+    {
+      "employee_id": "employ-b5ecd3ce-7814-4589-89a3-462bf8d3dcd7",
+      "name_employee": "Mely",
+      "gender": "P",
+      "grade": 2,
+      "is_married": true
+    }
+  ]
+}
