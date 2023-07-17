@@ -42,6 +42,7 @@ func NewRoute(emplyeserve handler.EmployeServeHTTPInter,
 
 	mux.RegisterMiddleware(middleware.SetMyCookies)
 	mux.RegisterMiddleware(exception.ErrorHandling)
+	mux.RegisterMiddleware(middleware.LogRequest)
 
 	return mux
 }

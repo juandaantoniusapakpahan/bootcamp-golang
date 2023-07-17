@@ -28,12 +28,6 @@ func (sh *SalaryMatrixHandler) ServeHTTP(w http.ResponseWriter, r *http.Request)
 		requestBody := salarymatrix.SalaryMatrixRequest{}
 		helper.GetRequestBody(r, &requestBody)
 
-		// salaryData := sh.SalaryMatrix.FindByGrade(requestBody.Grade.(int))
-
-		// if salaryData != (salarymatrix.SalaryMatrix{}){
-		// 	panic(exception.NewBadRequestError(""))
-		// }
-
 		err := requestBody.ValidateFiled()
 		if err != nil {
 			panic(exception.NewBadRequestError(err.Error()))

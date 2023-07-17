@@ -1,33 +1,48 @@
 {
   "payrolls": [
     {
-      "payroll_id": "payroll-9aa1cef4-1428-4883-a481-f6ed67aae043",
-      "basic_salary": 7000000,
+      "payroll_id": "payroll-d1f7d1b9-4cf2-49c6-a11e-a9fe947f4b04",
+      "basic_salary": 6900000,
       "pay_cut": 0,
-      "additional_salary": 3000000,
-      "priod": "July-2023",
-      "total": 10000000,
+      "additional_salary": 4000000,
+      "priode": "July-2023",
+      "total": 10900000,
       "employee": {
-        "employee_id": "employ-df1d009f-99fd-4fff-a967-62e83609659a",
-        "name_employee": "Mely",
+        "employee_id": "employ-46a2227f-12c7-46f8-9135-6a663474502c",
+        "name_employee": "Miranda",
         "gender": "P",
         "grade": 2,
-        "is_married": true
+        "is_married": false
       }
     },
     {
-      "payroll_id": "payroll-ef5c9de3-0177-4303-bdfb-764e8dcf11c1",
-      "basic_salary": 7000000,
+      "payroll_id": "payroll-0201c812-46ff-4c58-a205-2ea04d0db901",
+      "basic_salary": 6900000,
       "pay_cut": 0,
-      "additional_salary": 5000000,
-      "priod": "July-2023",
-      "total": 12000000,
+      "additional_salary": 4000000,
+      "priode": "June-2023",
+      "total": 10900000,
       "employee": {
-        "employee_id": "employ-f8262bca-ea95-4669-8e45-83c4c6b56fe9",
-        "name_employee": "Juanda",
-        "gender": "L",
+        "employee_id": "employ-46a2227f-12c7-46f8-9135-6a663474502c",
+        "name_employee": "Miranda",
+        "gender": "P",
         "grade": 2,
-        "is_married": true
+        "is_married": false
+      }
+    },
+    {
+      "payroll_id": "payroll-ca2b66ff-4a05-4555-b1f3-b1e5066ced31",
+      "basic_salary": 6900000,
+      "pay_cut": 0,
+      "additional_salary": 4000000,
+      "priode": "May-2023",
+      "total": 10900000,
+      "employee": {
+        "employee_id": "employ-46a2227f-12c7-46f8-9135-6a663474502c",
+        "name_employee": "Miranda",
+        "gender": "P",
+        "grade": 2,
+        "is_married": false
       }
     }
   ]

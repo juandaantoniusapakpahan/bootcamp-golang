@@ -3,7 +3,6 @@ package helper
 import (
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
 	"payroll-exam/domain/employee"
 	"payroll-exam/domain/payroll"
@@ -21,7 +20,6 @@ func GetRequestBody(r *http.Request, data interface{}) {
 	decoder := json.NewDecoder(r.Body)
 	err := decoder.Decode(data)
 	if err != nil {
-		log.Println(err)
 		panic(err)
 	}
 }
@@ -72,6 +70,7 @@ func PayrollData(data payroll.PayRollRequest) payroll.PayRollModel {
 
 	return payroll.PayRollModel{
 		EmployeeId: fmt.Sprintf("%s", data.EmployeeId),
+		Priode:     fmt.Sprintf("%s", data.Priode),
 		Hadir:      hadir,
 		Absen:      absen,
 	}

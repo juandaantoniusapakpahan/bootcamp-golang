@@ -2,28 +2,29 @@ package payroll
 
 import (
 	"errors"
-	"fmt"
 	"os"
 	"payroll-exam/db"
 	"payroll-exam/domain/employee"
 	"payroll-exam/domain/salarymatrix"
 	"reflect"
-	"time"
+	"sync"
 
 	"github.com/google/uuid"
 )
 
 type PayRollRequest struct {
 	EmployeeId interface{} `json:"employee_id"`
+	Priode     interface{} `json:"priode"`
 	Hadir      interface{} `json:"hadir"`
 	Absen      interface{} `json:"absen"`
 }
 
 func (pr *PayRollRequest) ValidateFiled() error {
-	if pr.EmployeeId == nil || pr.Hadir == nil || pr.Absen == nil {
+	if pr.EmployeeId == nil || pr.Priode == nil || pr.Hadir == nil || pr.Absen == nil {
 		return errors.New("Mohon lengkapi data")
 	}
 	if reflect.TypeOf(pr.EmployeeId).Kind() != reflect.String ||
+		reflect.TypeOf(pr.Priode).Kind() != reflect.String ||
 		reflect.TypeOf(pr.Hadir).Kind() != reflect.Float64 ||
 		reflect.TypeOf(pr.Absen).Kind() != reflect.Float64 {
 		return errors.New("Tipe data tidak sesuai")
@@ -37,7 +38,7 @@ type PayRoll struct {
 	BasicSalary      float64           `json:"basic_salary"`
 	PayCut           float64           `json:"pay_cut"`
 	AdditionalSalary float64           `json:"additional_salary"`
-	Priod            string            `json:"priod"`
+	Priode           string            `json:"priode"`
 	Total            float64           `json:"total"`
 	Employee         employee.Employee `json:"employee"`
 }
@@ -46,6 +47,7 @@ type PayRollModel struct {
 	EmployeeId string
 	Hadir      float64
 	Absen      float64
+	Priode     string
 }
 
 type PayRollList struct {
@@ -59,10 +61,10 @@ type PayrollImplement struct {
 
 type PayRollInterface interface {
 	Add(payroll PayRollModel) (PayRoll, error)
-	ShowPayrollById(employId string) (PayRoll, error)
+	ShowPayrollById(employId string) (ShowPayRollById, error)
 	IsPayroll(emploId string, priod string) bool
 	Download() *os.File
-	ShowAll() []PayRoll
+	ShowAll(channel chan []PayRoll, mg *sync.WaitGroup)
 }
 
 func NewPayroll(db db.DBInterface, salarymatris salarymatrix.SalaryMatrixInterface, employee employee.EmployeeInterface) PayRollInterface {
@@ -73,7 +75,7 @@ func (p *PayrollImplement) IsPayroll(emploId string, date string) bool {
 	listPayroll := PayRollList{}
 	p.DB.ReadFile("payroll.json", &listPayroll)
 	for _, v := range listPayroll.PayRolls {
-		if v.Priod == date && v.Employee.IdEmployee == emploId {
+		if v.Priode == date && v.Employee.IdEmployee == emploId {
 			return true
 		}
 	}
@@ -82,8 +84,6 @@ func (p *PayrollImplement) IsPayroll(emploId string, date string) bool {
 
 func (p *PayrollImplement) Add(pr PayRollModel) (PayRoll, error) {
 	idPayroll := "payroll-" + uuid.New().String()
-	year, month, _ := time.Now().Date()
-	priod := fmt.Sprintf("%v-%v", month, year)
 
 	Dataemploye := p.Employee.FindEmplById(pr.EmployeeId)
 	if Dataemploye == (employee.Employee{}) {
@@ -92,7 +92,7 @@ func (p *PayrollImplement) Add(pr PayRollModel) (PayRoll, error) {
 
 	salarymatrix := p.SalaryMatrix.FindByGrade(Dataemploye.Grade)
 
-	if isPeriod := p.IsPayroll(Dataemploye.IdEmployee, priod); isPeriod {
+	if isPeriod := p.IsPayroll(Dataemploye.IdEmployee, pr.Priode); isPeriod {
 		return PayRoll{}, errors.New("Payroll priode sudah dimasukan")
 	}
 
@@ -107,7 +107,7 @@ func (p *PayrollImplement) Add(pr PayRollModel) (PayRoll, error) {
 		BasicSalary:      salarymatrix.BasicSalary,
 		PayCut:           pr.Absen * salarymatrix.PayCut,
 		AdditionalSalary: pr.Hadir*salarymatrix.Allowance + addHeadofFamily,
-		Priod:            priod,
+		Priode:           pr.Priode,
 		Total:            (salarymatrix.BasicSalary - pr.Absen*salarymatrix.PayCut + pr.Hadir*salarymatrix.Allowance + addHeadofFamily),
 		Employee:         Dataemploye,
 	}
@@ -126,19 +126,53 @@ func (p *PayrollImplement) Download() *os.File {
 	return file
 }
 
-func (p *PayrollImplement) ShowPayrollById(emploId string) (PayRoll, error) {
-	listPayroll := PayRollList{}
-	p.DB.ReadFile("payroll.json", &listPayroll)
-	for _, v := range listPayroll.PayRolls {
-		if v.Employee.IdEmployee == emploId {
-			return v, nil
-		}
-	}
-	return PayRoll{}, errors.New("Payroll tidak ditemukan")
+type JustPayRoll struct {
+	IdPayRool        string  `json:"payroll_id"`
+	BasicSalary      float64 `json:"basic_salary"`
+	PayCut           float64 `json:"pay_cut"`
+	AdditionalSalary float64 `json:"additional_salary"`
+	Priode           string  `json:"priode"`
+	Total            float64 `json:"total"`
 }
 
-func (p *PayrollImplement) ShowAll() []PayRoll {
+type ShowPayRollById struct {
+	Employee employee.Employee `json:"employee"`
+	PayRoll  []JustPayRoll     `json:"payrolls"`
+}
+
+func (p *PayrollImplement) ShowPayrollById(emploId string) (ShowPayRollById, error) {
+	listPayroll := PayRollList{}
+	payrollRespon := ShowPayRollById{}
+	p.DB.ReadFile("payroll.json", &listPayroll)
+
+	dataEmployee := p.Employee.FindEmplById(emploId)
+	if dataEmployee == (employee.Employee{}) {
+		return ShowPayRollById{}, errors.New("Payroll tidak ditemukan")
+	}
+
+	payrollRespon.Employee = dataEmployee
+
+	for _, v := range listPayroll.PayRolls {
+		if v.Employee.IdEmployee == emploId {
+			newPayjus := JustPayRoll{
+				IdPayRool:        v.IdPayRool,
+				BasicSalary:      v.BasicSalary,
+				PayCut:           v.PayCut,
+				AdditionalSalary: v.AdditionalSalary,
+				Priode:           v.Priode,
+				Total:            v.Total,
+			}
+			payrollRespon.PayRoll = append(payrollRespon.PayRoll, newPayjus)
+		}
+	}
+	return payrollRespon, nil
+}
+
+func (p *PayrollImplement) ShowAll(channel chan []PayRoll, mg *sync.WaitGroup) {
+	mg.Add(1)
 	listPayroll := PayRollList{}
 	p.DB.ReadFile("payroll.json", &listPayroll)
-	return listPayroll.PayRolls
+	channel <- listPayroll.PayRolls
+	mg.Done()
+
 }

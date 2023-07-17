@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 	"payroll-exam/db"
 	"payroll-exam/domain/employee"
@@ -28,6 +29,9 @@ func main() {
 	salaryMatrixHandler := handler.NewSelaryMatrixHandler(salaryMatrix)
 	payrollHandler := handler.NewPayrollHandler(newPayroll)
 	userHandler := handler.NewUserHandler()
+
+	newDB.OpenLogFile("db/development.log")
+	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 
 	// route
 	route := routes.NewRoute(employeHandler, salaryMatrixHandler, payrollHandler, userHandler)

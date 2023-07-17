@@ -3,6 +3,7 @@ package db
 import (
 	"encoding/json"
 	"io/ioutil"
+	"log"
 	"os"
 )
 
@@ -14,6 +15,7 @@ type DBInterface interface {
 	MarshalMan(filename string, data interface{})
 	ReadFile(filename string, data interface{})
 	GetFile(filename string) *os.File
+	OpenLogFile(filename string)
 }
 
 func NewDB() DBInterface {
@@ -61,6 +63,17 @@ func (d *DBTest) GetFile(filename string) *os.File {
 	if err != nil {
 		panic(err)
 	}
-	defer file.Close()
 	return file
+}
+
+func (d *DBTest) OpenLogFile(logfile string) {
+	if logfile != "" {
+		lf, err := os.OpenFile(logfile, os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0640)
+
+		if err != nil {
+			log.Fatal("OpenLogfile: os.OpenFile:", err)
+		}
+
+		log.SetOutput(lf)
+	}
 }

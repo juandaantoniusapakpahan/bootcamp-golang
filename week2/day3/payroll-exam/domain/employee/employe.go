@@ -97,15 +97,15 @@ func (er *EmployeeRequest) ValidateFiled() error {
 	if er.NameEmployee == nil || er.Gender == nil || er.Grade == nil || er.IsMarried == nil {
 		return errors.New("Mohon lengkapi data")
 	}
-	if !strings.Contains("LP", er.Gender.(string)) || len(er.Gender.(string)) != 1 {
-		return errors.New("Mohon isi Gender dengan nilai L/P")
-	}
 
 	if reflect.TypeOf(er.NameEmployee).Kind() != reflect.String ||
 		reflect.TypeOf(er.Gender).Kind() != reflect.String ||
 		reflect.TypeOf(er.IsMarried).Kind() != reflect.Bool ||
 		reflect.TypeOf(er.Grade).Kind() != reflect.Float64 {
 		return errors.New("Tipe data tidak sesuai")
+	}
+	if !strings.Contains("LP", er.Gender.(string)) || len(er.Gender.(string)) != 1 {
+		return errors.New("Mohon isi Gender dengan nilai L/P")
 	}
 	return nil
 }
