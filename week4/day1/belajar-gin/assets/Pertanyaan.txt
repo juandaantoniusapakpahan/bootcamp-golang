@@ -1,0 +1,80 @@
+JSON
+
+
+1. Buatlah function dengan satu parameter dengan tipe data string dan mengemabalikan nilai dengan tipe data map[string]interface{}. Gunakan data di bawah ini. Gunakan json.Unmarshal.
+
+
+{ "first_name" : "Sammy", "last_name" : "Shark", "location" : "Ocean", "online" : true, "followers" : 987 }
+
+
+2. Buatlah function dengan satu parameter dengan tipe data string dan mengembalikan nilai dengan tipe data int, dimana nilai tersebut diperoleh dari penjumlahan followers setiap orang. Berikut data string yang digunakan. Gunakan json,NewDecoder.
+[
+{ "first_name" : "Budi", "last_name" : "Shark", "location" : "Ocean", "online" : true, "followers" : 987 },
+{ "first_name" : "Bobob", "last_name" : "Shark", "location" : "Ocean", "online" : true, "followers" : 987 },
+{ "first_name" : "Jimmy", "last_name" : "Shark", "location" : "Ocean", "online" : true, "followers" : 987 },
+{ "first_name" : "Cika", "last_name" : "Shark", "location" : "Ocean", "online" : true, "followers" : 987 },
+{ "first_name" : "Cuka", "last_name" : "Shark", "location" : "Ocean", "online" : true, "followers" : 987 }
+]
+
+
+3. Diberikan struct 
+type Person struct{
+        Nama                         string 
+        Alamat                 string
+        Usia                        int
+        TanggalLahir         string
+}
+
+
+Buatlah subuah function yang memiliki satu parameter dengan tipe data Person dan mengemablikan satu nilai dengan tipe data string. Dimana string tersebut berupah data json dari struct Person. Gunakan json.Marhsal. string yang dikembalikan harus memiliki nilai.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4. Diberikan struct 
+
+
+type Alamat struct {
+        NamaJalan         string
+        Kabupaten        string
+        KodePos        string
+        
+}
+
+
+type Person struct{
+        Nama                         string 
+        Usia                        int
+        TanggalLahir         string
+        Alamat                 Alamat
+}
+
+
+
+
+Buatlah subuah function yang memiliki satu parameter dengan tipe data Person dan mengemablikan satu nilai bertipe string. Dimana string tersebut berupah data json dari struct Person. Gunakan json.NewEncoder dan string yang dikembalikan harus memiliki nilai.
+
+
+
+
+5. Jelaskan, apa itu JSON ?

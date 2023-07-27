@@ -1,0 +1,17 @@
+// SetMaxOpenConns
+SetMaxOpenConns pada paket database/sql di Go digunakan untuk mengatur 
+jumlah maksimum koneksi aktif yang dapat ada dalam pool koneksi database.
+Koneksi aktif adalah koneksi yang sedang digunakan untuk menjalankan query 
+atau operasi database lainnya. 
+
+// SetMaxIdleConns
+Fungsi SetMaxIdleConns pada paket database/sql di Go digunakan untuk mengatur 
+jumlah maksimum koneksi idle yang dapat ada dalam pool koneksi database. 
+Koneksi idle adalah koneksi yang ada tetapi tidak sedang digunakan untuk menjalankan query. 
+Ketika aplikasi menjalankan query dan menggunakan koneksi, koneksi tersebut menjadi koneksi aktif. 
+Setelah koneksi aktif selesai menjalankan query, koneksi tersebut kembali 
+menjadi koneksi idle dan kembali masuk ke dalam pool.
+
+// SetConnMaxLifetime()
+
+// SetConnMaxIdleTime()

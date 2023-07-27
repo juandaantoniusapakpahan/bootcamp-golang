@@ -7,10 +7,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-// NameEmployee interface{} `json:"name_employee"`
-// Gender       interface{} `json:"gender_employee"`
-// Grade        interface{} `json:"grade_employee"`
-// IsMarried    interface{} `json:"is_married"`
 func TestEmployeeValidPayload(t *testing.T) {
 
 	payload := []employee.EmployeeRequest{

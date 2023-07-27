@@ -37,7 +37,6 @@ func (he *EmployeServeHTTP) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 		response := helper.NewResponse(http.StatusOK, "success", map[string]interface{}{"employees": employees})
 		helper.ResponseWrite(w, response, http.StatusOK)
-
 	} else if r.Method == "POST" {
 		requestBody := employee.EmployeeRequest{}
 		helper.GetRequestBody(r, &requestBody)
@@ -56,12 +55,10 @@ func (he *EmployeServeHTTP) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 		response := helper.NewResponse(http.StatusCreated, "success", map[string]interface{}{"employee": result})
 		helper.ResponseWrite(w, response, http.StatusCreated)
-
 	} else if r.Method == "GET" && employId != "" {
 		result := he.Employee.FindEmplById(employId)
 		response := helper.NewResponse(http.StatusOK, "success", map[string]interface{}{"employee": result})
 		helper.ResponseWrite(w, response, http.StatusOK)
-
 	} else {
 		response := helper.NewResponse(http.StatusBadRequest, "fail", map[string]interface{}{"message": "Method not allowed"})
 		helper.ResponseWrite(w, response, http.StatusBadRequest)

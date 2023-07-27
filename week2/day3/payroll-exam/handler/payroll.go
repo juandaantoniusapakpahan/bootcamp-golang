@@ -49,7 +49,6 @@ func (ph *PayrollHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 		response := helper.NewResponse(http.StatusCreated, "success", map[string]interface{}{"payroll": result})
 		helper.ResponseWrite(w, response, http.StatusCreated)
-
 	} else if r.Method == "GET" && download == "true" && employeId == "" {
 		file := ph.Payroll.Download()
 		defer file.Close()
@@ -71,7 +70,6 @@ func (ph *PayrollHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 		response := helper.NewResponse(http.StatusOK, "success", map[string]interface{}{"payroll": result})
 		helper.ResponseWrite(w, response, http.StatusOK)
-
 	} else if r.Method == "GET" && download == "" && employeId == "" {
 
 		channel := make(chan []payroll.PayRoll, 1)
@@ -83,7 +81,6 @@ func (ph *PayrollHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 		response := helper.NewResponse(http.StatusCreated, "success", map[string]interface{}{"payrolls": payrolls})
 		helper.ResponseWrite(w, response, http.StatusOK)
-
 	} else {
 		response := helper.NewResponse(http.StatusBadRequest, "fail", map[string]interface{}{"message": "Method not allowed"})
 		helper.ResponseWrite(w, response, http.StatusBadRequest)

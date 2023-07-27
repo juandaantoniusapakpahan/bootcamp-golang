@@ -63,9 +63,6 @@ func (l *EmployeeImplement) Add(data Employee) (Employee, error) {
 		IsMarried:    data.IsMarried,
 	}
 
-	// type ListEmployee struct {
-	// 	Employees []Employee `json:"employees"`
-	// }
 	listemployee := ListEmployee{}
 	l.DB.ReadFile("employee.json", &listemployee)
 	listemployee.Employees = append(listemployee.Employees, newEmployee)

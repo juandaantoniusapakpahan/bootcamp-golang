@@ -22,9 +22,9 @@ func NewSelaryMatrixHandler(salarymatrix salarymatrix.SalaryMatrixInterface) Sal
 }
 
 func (sh *SalaryMatrixHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	query := r.URL.Query().Get("grade")
+	grade := r.URL.Query().Get("grade")
 
-	if r.Method == "POST" && query == "" {
+	if r.Method == "POST" && grade == "" {
 		requestBody := salarymatrix.SalaryMatrixRequest{}
 		helper.GetRequestBody(r, &requestBody)
 
@@ -43,8 +43,7 @@ func (sh *SalaryMatrixHandler) ServeHTTP(w http.ResponseWriter, r *http.Request)
 		response := helper.NewResponse(http.StatusCreated, "success", map[string]interface{}{"salary_matrix": result})
 
 		helper.ResponseWrite(w, response, http.StatusCreated)
-
-	} else if r.Method == "GET" { // GET
+	} else if r.Method == "GET" {
 
 		channel := make(chan []salarymatrix.SalaryMatrix)
 		go sh.SalaryMatrix.GetAll(channel)

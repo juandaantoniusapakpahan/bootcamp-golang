@@ -1,0 +1,217 @@
+2023/07/23 16:43:53 http: TLS handshake error from [::1]:53681: EOF
+2023/07/23 16:43:53 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 295 "" "PostmanRuntime/7.32.3" 
+2023/07/23 16:43:54 [::1] - -  "POST /salarymatrix HTTP/1.1" 400 60 "" "PostmanRuntime/7.32.3" 
+2023/07/23 17:02:00 [::1] - -  "POST /salarymatrix HTTP/1.1" 400 60 "" "PostmanRuntime/7.32.3" 
+2023/07/23 17:25:29 http: TLS handshake error from [::1]:54030: EOF
+2023/07/23 17:25:29 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/23 17:26:36 [::1] - -  "POST /salarymatrix HTTP/1.1" 400 "" "PostmanRuntime/7.32.3" 
+2023/07/23 17:31:44 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/24 08:55:28 http: TLS handshake error from [::1]:50188: EOF
+2023/07/24 08:55:28 [::1] - -  "POST /salarymatrix HTTP/1.1" 400 "" "PostmanRuntime/7.32.3" 
+2023/07/24 08:55:30 [::1] - -  "POST /salarymatrix HTTP/1.1" 400 "" "PostmanRuntime/7.32.3" 
+2023/07/24 08:55:32 [::1] - -  "POST /salarymatrix HTTP/1.1" 400 "" "PostmanRuntime/7.32.3" 
+2023/07/24 08:55:32 [::1] - -  "POST /salarymatrix HTTP/1.1" 400 "" "PostmanRuntime/7.32.3" 
+2023/07/24 08:55:33 [::1] - -  "POST /salarymatrix HTTP/1.1" 400 "" "PostmanRuntime/7.32.3" 
+2023/07/24 08:55:42 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/24 08:57:31 [::1] - -  "GET /salarymatrix?salarymatrix=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 404 "" "PostmanRuntime/7.32.3" 
+2023/07/24 08:59:07 [::1] - -  "GET /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/24 08:59:21 [::1] - -  "GET /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c2699090 HTTP/1.1" 404 "" "PostmanRuntime/7.32.3" 
+2023/07/24 09:07:19 http: TLS handshake error from [::1]:50316: EOF
+2023/07/24 09:07:19 [::1] - -  "GET /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/24 09:07:25 [::1] - -  "GET /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c2699090 HTTP/1.1" 404 "" "PostmanRuntime/7.32.3" 
+2023/07/24 09:14:46 http: TLS handshake error from [::1]:50458: EOF
+2023/07/24 09:14:46 [::1] - -  "GET /salarymatrix HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/24 09:14:57 [::1] - -  "GET /salarymatrix HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/24 09:14:58 [::1] - -  "GET /salarymatrix HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/24 09:18:35 http: TLS handshake error from [::1]:50511: EOF
+2023/07/24 09:18:35 [::1] - -  "GET /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c2699090 HTTP/1.1" 404 "" "PostmanRuntime/7.32.3" 
+2023/07/24 09:18:38 [::1] - -  "GET /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:04:05 http: TLS handshake error from [::1]:51215: EOF
+2023/07/24 10:04:05 [::1] - -  "PUT /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 0 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:04:19 [::1] - -  "GET /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:04:28 [::1] - -  "GET /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:04:52 [::1] - -  "PUT /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 0 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:06:23 http: TLS handshake error from [::1]:51239: EOF
+2023/07/24 10:06:23 [::1] - -  "PUT /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:07:05 http: TLS handshake error from [::1]:51249: EOF
+2023/07/24 10:07:05 [::1] - -  "PUT /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:07:20 http: TLS handshake error from [::1]:51259: EOF
+2023/07/24 10:07:20 [::1] - -  "PUT /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:08:08 http: TLS handshake error from [::1]:51278: EOF
+2023/07/24 10:08:08 [::1] - -  "PUT /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:09:10 http: TLS handshake error from [::1]:51290: EOF
+2023/07/24 10:09:10 [::1] - -  "PUT /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:10:30 http: TLS handshake error from [::1]:51308: EOF
+2023/07/24 10:10:30 [::1] - -  "PUT /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:12:12 [::1] - -  "GET /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:17:01 [::1] - -  "PUT /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:17:09 http: TLS handshake error from [::1]:51381: EOF
+2023/07/24 10:17:09 [::1] - -  "PUT /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/24 10:23:45 http: TLS handshake error from [::1]:51443: EOF
+2023/07/24 10:23:45 [::1] - -  "PUT /salarymatrix?salarymatrixid=salarymatrix-e9f522d7-8b8c-4f42-a475-fb9c26990901 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/26 14:16:15 http: TLS handshake error from [::1]:57609: EOF
+2023/07/26 14:16:15 [::1] - -  "POST /employee HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 14:17:25 http: TLS handshake error from [::1]:57640: EOF
+2023/07/26 14:17:25 [::1] - -  "POST /employee HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 14:17:58 http: TLS handshake error from [::1]:57660: EOF
+2023/07/26 14:17:58 [::1] - -  "POST /employee HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 14:18:20 http: TLS handshake error from [::1]:57673: EOF
+2023/07/26 14:18:20 [::1] - -  "POST /employee HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 14:18:58 http: TLS handshake error from [::1]:57690: EOF
+2023/07/26 14:18:58 [::1] - -  "POST /employee HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:15:41 http: TLS handshake error from [::1]:50866: EOF
+2023/07/26 20:15:41 [::1] - -  "POST /salarymatrix HTTP/1.1" 400 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:17:04 [::1] - -  "POST /salarymatrix HTTP/1.1" 400 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:17:48 http: superfluous response.WriteHeader call from payroll-exam/helper.(*LoggerStruct).WriteHeader (logger.go:29)
+2023/07/26 20:17:48 [::1] - -  "POST /salarymatrix HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:19:37 http: TLS handshake error from [::1]:50907: EOF
+2023/07/26 20:19:37 http: superfluous response.WriteHeader call from payroll-exam/helper.(*LoggerStruct).WriteHeader (logger.go:29)
+2023/07/26 20:19:37 [::1] - -  "POST /salarymatrix HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:20:42 http: TLS handshake error from [::1]:50920: EOF
+2023/07/26 20:20:42 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:21:44 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:23:49 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:24:02 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:25:11 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:25:58 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:26:34 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:26:46 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:27:14 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:27:49 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:28:19 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:28:34 [::1] - -  "POST /salarymatrix HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:28:56 [::1] - -  "GET /salarymatrix?salarymatrixid=salarymatrix-655bd106-2117-498a-9888-a43117f2a7f9 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:29:22 [::1] - -  "PUT /salarymatrix?salarymatrixid=salarymatrix-655bd106-2117-498a-9888-a43117f2a7f9 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:50:46 [::1] - -  "POST /employee HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 20:51:06 [::1] - -  "GET /employee?employeeId=employee-134331d2-658f-4ad2-bcc5-48df28371d47 HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 21:35:39 http: TLS handshake error from [::1]:51408: EOF
+2023/07/26 21:35:39 [::1] - -  "GET /employee HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 21:37:13 [::1] - -  "POST /employee HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 21:37:26 [::1] - -  "GET /employee HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 21:37:31 [::1] - -  "POST /employee HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 21:37:34 [::1] - -  "GET /employee HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:05:27 http: TLS handshake error from [::1]:51984: EOF
+2023/07/26 23:05:27 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:06:05 http: TLS handshake error from [::1]:51998: EOF
+2023/07/26 23:06:05 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:06:21 http: TLS handshake error from [::1]:52007: EOF
+2023/07/26 23:06:21 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:06:37 http: TLS handshake error from [::1]:52013: EOF
+2023/07/26 23:06:37 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:06:59 http: TLS handshake error from [::1]:52022: EOF
+2023/07/26 23:06:59 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:07:19 http: TLS handshake error from [::1]:52028: EOF
+2023/07/26 23:07:19 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:07:51 http: TLS handshake error from [::1]:52035: EOF
+2023/07/26 23:07:51 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:09:53 http: TLS handshake error from [::1]:52052: EOF
+2023/07/26 23:09:53 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:10:12 http: TLS handshake error from [::1]:52061: EOF
+2023/07/26 23:10:12 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:10:28 http: TLS handshake error from [::1]:52068: EOF
+2023/07/26 23:10:28 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:10:39 http: TLS handshake error from [::1]:52074: EOF
+2023/07/26 23:10:39 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:11:37 http: TLS handshake error from [::1]:52087: EOF
+2023/07/26 23:11:38 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:11:51 http: TLS handshake error from [::1]:52093: EOF
+2023/07/26 23:11:51 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:12:15 http: TLS handshake error from [::1]:52104: EOF
+2023/07/26 23:12:15 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:14:57 http: TLS handshake error from [::1]:52129: EOF
+2023/07/26 23:14:57 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:15:21 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:15:22 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:15:36 http: TLS handshake error from [::1]:52141: EOF
+2023/07/26 23:15:36 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:16:16 http: TLS handshake error from [::1]:52153: EOF
+2023/07/26 23:16:16 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:16:28 http: TLS handshake error from [::1]:52159: EOF
+2023/07/26 23:16:28 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:16:41 http: TLS handshake error from [::1]:52167: EOF
+2023/07/26 23:16:41 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:16:55 http: TLS handshake error from [::1]:52173: EOF
+2023/07/26 23:16:55 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:17:43 http: TLS handshake error from [::1]:52183: EOF
+2023/07/26 23:17:43 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:24:42 http: TLS handshake error from [::1]:52244: EOF
+2023/07/26 23:24:42 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:25:48 http: TLS handshake error from [::1]:52261: EOF
+2023/07/26 23:25:48 [::1] - -  "POST /payroll HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:27:27 http: TLS handshake error from [::1]:52280: EOF
+2023/07/26 23:27:27 [::1] - -  "POST /payroll HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:27:48 [::1] - -  "GET /employee?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:28:02 [::1] - -  "GET /salarymatrix HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:29:49 http: TLS handshake error from [::1]:52308: EOF
+2023/07/26 23:29:49 [::1] - -  "POST /payroll HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/26 23:38:58 http: TLS handshake error from [::1]:52363: EOF
+2023/07/26 23:38:58 [::1] - -  "POST /payroll HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 07:34:50 http: TLS handshake error from [::1]:49468: EOF
+2023/07/27 07:34:50 [::1] - -  "POST /payroll HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 07:58:42 http: TLS handshake error from [::1]:49913: EOF
+2023/07/27 07:58:42 [::1] - -  "POST /payroll HTTP/1.1" 400 "" "PostmanRuntime/7.32.3" 
+2023/07/27 07:59:44 http: TLS handshake error from [::1]:49938: EOF
+2023/07/27 07:59:44 [::1] - -  "POST /payroll HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 07:59:47 [::1] - -  "POST /payroll HTTP/1.1" 400 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:04:51 http: TLS handshake error from [::1]:50020: EOF
+2023/07/27 08:04:51 [::1] - -  "POST /payroll HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:30:09 http: TLS handshake error from [::1]:50387: EOF
+2023/07/27 08:30:09 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:30:40 http: TLS handshake error from [::1]:50407: EOF
+2023/07/27 08:30:40 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:30:51 http: TLS handshake error from [::1]:50416: EOF
+2023/07/27 08:30:51 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:31:18 http: TLS handshake error from [::1]:50428: EOF
+2023/07/27 08:31:18 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:31:29 http: TLS handshake error from [::1]:50438: EOF
+2023/07/27 08:31:29 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:31:43 http: TLS handshake error from [::1]:50446: EOF
+2023/07/27 08:31:43 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:32:32 http: TLS handshake error from [::1]:50465: EOF
+2023/07/27 08:32:32 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:35:26 http: TLS handshake error from [::1]:50501: EOF
+2023/07/27 08:35:26 [::1] - -  "POST /payroll HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:35:46 http: TLS handshake error from [::1]:50512: EOF
+2023/07/27 08:35:46 [::1] - -  "POST /payroll HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:36:03 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:37:40 http: TLS handshake error from [::1]:50540: EOF
+2023/07/27 08:37:40 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:38:16 http: TLS handshake error from [::1]:50552: EOF
+2023/07/27 08:38:16 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:38:52 http: TLS handshake error from [::1]:50563: EOF
+2023/07/27 08:38:52 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:39:20 http: TLS handshake error from [::1]:50572: EOF
+2023/07/27 08:39:20 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:39:55 http: TLS handshake error from [::1]:50585: EOF
+2023/07/27 08:39:55 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:41:48 http: TLS handshake error from [::1]:50609: EOF
+2023/07/27 08:41:48 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:42:25 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 404 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:42:42 [::1] - -  "POST /payroll HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:42:47 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:56:29 http: TLS handshake error from [::1]:50773: EOF
+2023/07/27 08:56:29 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:58:54 http: TLS handshake error from [::1]:50825: EOF
+2023/07/27 08:58:54 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:59:09 [::1] - -  "POST /payroll HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 08:59:12 [::1] - -  "GET /payroll?employeeId=employee-4c27e7ba-aebe-475d-8de5-01d28900ef1e HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 09:01:37 http: TLS handshake error from [::1]:50877: EOF
+2023/07/27 09:01:37 [::1] - -  "POST /payroll HTTP/1.1" 400 "" "PostmanRuntime/7.32.3" 
+2023/07/27 09:19:31 [::1] - -  "POST /payroll HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 09:51:40 http: TLS handshake error from [::1]:51416: EOF
+2023/07/27 09:51:40 [::1] - -  "GET /payroll HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/27 10:07:21 [::1] - -  "GET /salarymatrix?salarymatrixid=salarymatrix-655bd106-2117-498a-9888-a43117f2a7f9 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/27 10:08:09 http: TLS handshake error from [::1]:51600: EOF
+2023/07/27 10:08:09 [::1] - -  "GET /salarymatrix?salarymatrixid=salarymatrix-655bd106-2117-498a-9888-a43117f2a7f9 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/27 10:36:32 http: TLS handshake error from [::1]:51968: EOF
+2023/07/27 10:36:32 [::1] - -  "POST /payroll?employeeId=employ-4a8b1eb9-9cc9-434b-801d-c885ad4a4616 HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 10:37:08 [::1] - -  "POST /payroll?employeeId=employ-4a8b1eb9-9cc9-434b-801d-c885ad4a4616 HTTP/1.1" 201 "" "PostmanRuntime/7.32.3" 
+2023/07/27 10:37:19 [::1] - -  "GET /payroll?payrollId=payroll-27cbeaa5-f85a-4172-8dfb-ae0f95aadaa1 HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/27 10:37:59 http: TLS handshake error from [::1]:51989: EOF
+2023/07/27 10:37:59 [::1] - -  "GET /payroll?payrollId=payroll-27cbeaa5-f85a-4172-8dfb-ae0f95aadaa1 HTTP/1.1" 500 "" "PostmanRuntime/7.32.3" 
+2023/07/27 10:40:18 http: TLS handshake error from [::1]:52032: EOF
+2023/07/27 10:40:18 [::1] - -  "GET /payroll?payrollId=payroll-27cbeaa5-f85a-4172-8dfb-ae0f95aadaa1 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/27 10:41:14 http: TLS handshake error from [::1]:52050: EOF
+2023/07/27 10:41:14 [::1] - -  "GET /payroll?payrollId=payroll-27cbeaa5-f85a-4172-8dfb-ae0f95aadaa1 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 
+2023/07/27 10:41:22 [::1] - -  "GET /payroll?payrollId=sdf HTTP/1.1" 404 "" "PostmanRuntime/7.32.3" 
+2023/07/27 10:41:28 [::1] - -  "GET /payroll?payrollId=payroll-27cbeaa5-f85a-4172-8dfb-ae0f95aadaa1 HTTP/1.1" 200 "" "PostmanRuntime/7.32.3" 

@@ -14,6 +14,9 @@ import (
 )
 
 func main() {
+
+	// port := os.Getenv("PORT")
+
 	fmt.Println("CPU:", runtime.NumCPU())
 	fmt.Println("THREAD:", runtime.GOMAXPROCS(-1))
 	fmt.Println("GOROUTINE:", runtime.NumGoroutine())
@@ -37,14 +40,10 @@ func main() {
 	route := routes.NewRoute(employeHandler, salaryMatrixHandler, payrollHandler, userHandler)
 
 	// server
-	server := http.Server{
-		Addr:    ":8080",
-		Handler: route,
+	fmt.Println("Server started at localhost:443")
+	err := http.ListenAndServeTLS(":443", "server.crt", "server.key", route)
+
+	if err != nil {
+		panic(err)
 	}
-
-	// run server
-	fmt.Println("Server started at localhost:8080")
-	server.ListenAndServe()
-	fmt.Println(runtime.NumGoroutine())
-
 }

@@ -67,3 +67,66 @@
 2023/07/17 09:36:07 cookies.go:31: [::1]:51495 POST /salarymatrix
 2023/07/17 09:36:07 cookies.go:31: [::1]:51495 POST /salarymatrix
 2023/07/17 09:36:07 cookies.go:31: [::1]:51495 POST /salarymatrix
+2023/07/17 09:54:10 cookies.go:31: 127.0.0.1:51824 GET /
+2023/07/17 09:54:21 server.go:3217: http: TLS handshake error from [::1]:51826: remote error: tls: unknown certificate
+2023/07/17 09:54:21 server.go:3217: http: TLS handshake error from [::1]:51827: remote error: tls: unknown certificate
+2023/07/17 09:54:26 server.go:3217: http: TLS handshake error from [::1]:51829: remote error: tls: unknown certificate
+2023/07/17 09:54:26 server.go:3217: http: TLS handshake error from [::1]:51830: remote error: tls: unknown certificate
+2023/07/17 09:54:26 cookies.go:31: [::1]:51831 GET /
+2023/07/17 09:54:26 cookies.go:31: [::1]:51831 GET /favicon.ico
+2023/07/17 09:55:04 server.go:3217: http: TLS handshake error from [::1]:51853: EOF
+2023/07/17 09:55:04 cookies.go:31: [::1]:51854 GET /salarymatrix
+2023/07/17 09:56:02 cookies.go:31: [::1]:51854 GET /employee
+2023/07/17 09:56:16 cookies.go:31: [::1]:51854 POST /payroll
+2023/07/17 09:56:25 cookies.go:31: [::1]:51854 GET /payroll?employeeId=employ-46a2227f-12c7-46f8-9135-6a663474502c
+2023/07/17 09:56:38 cookies.go:31: [::1]:51854 GET /payroll
+2023/07/17 09:57:02 cookies.go:31: [::1]:51854 GET /cookies
+2023/07/17 09:58:49 main.go:19: Redirecting to https://localhost/
+2023/07/17 09:58:49 cookies.go:31: [::1]:51831 GET /
+2023/07/17 09:59:01 main.go:19: Redirecting to https://localhost/
+2023/07/17 09:59:01 cookies.go:31: [::1]:51831 GET /
+2023/07/17 09:59:28 cookies.go:31: [::1]:51831 GET /payroll
+2023/07/17 16:16:51 server.go:3217: http: TLS handshake error from [::1]:59311: EOF
+2023/07/17 16:16:51 cookies.go:31: [::1]:59312 POST /salarymatrix
+2023/07/17 16:17:56 cookies.go:31: [::1]:59312 POST /salarymatrix
+2023/07/17 16:17:59 cookies.go:31: [::1]:59312 GET /salarymatrix
+2023/07/17 16:18:25 cookies.go:31: [::1]:59312 POST /employee
+2023/07/17 16:19:11 cookies.go:31: [::1]:59312 POST /employee
+2023/07/17 16:19:15 cookies.go:31: [::1]:59312 GET /employee
+2023/07/17 16:19:42 cookies.go:31: [::1]:59312 POST /payroll
+2023/07/17 16:19:47 cookies.go:31: [::1]:59312 GET /payroll?employeeId=employ-837899e4-8510-4ede-8e01-6b6b16987785
+2023/07/17 16:19:51 cookies.go:31: [::1]:59312 GET /payroll
+2023/07/17 16:19:54 cookies.go:31: [::1]:59312 GET /cookies
+2023/07/21 09:13:46 server.go:3217: http: TLS handshake error from [::1]:49895: EOF
+2023/07/21 09:13:46 cookies.go:31: [::1]:49896 GET /salarymatrix
+2023/07/21 09:14:37 server.go:3217: http: TLS handshake error from [::1]:49906: EOF
+2023/07/21 09:14:37 cookies.go:31: [::1]:49907 GET /salarymatrix
+2023/07/21 09:15:15 server.go:3217: http: TLS handshake error from [::1]:49917: EOF
+2023/07/21 09:15:15 cookies.go:31: [::1]:49918 GET /salarymatrix
+2023/07/21 09:17:55 cookies.go:31: [::1]:49918 POST /salarymatrix
+2023/07/21 09:18:27 cookies.go:31: [::1]:49918 GET /salarymatrix
+2023/07/21 09:20:47 server.go:3217: http: TLS handshake error from [::1]:50008: remote error: tls: unknown certificate
+2023/07/21 09:20:47 server.go:3217: http: TLS handshake error from [::1]:50009: remote error: tls: unknown certificate
+2023/07/21 09:20:47 cookies.go:31: [::1]:50010 GET /salarymatrix
+2023/07/21 09:20:47 cookies.go:31: [::1]:50010 GET /favicon.ico
+2023/07/21 14:36:27 server.go:3217: http: TLS handshake error from [::1]:54590: remote error: tls: unknown certificate
+2023/07/21 14:36:27 cookies.go:31: [::1]:54591 GET /payroll?download=true
+2023/07/21 15:11:06 server.go:3217: http: TLS handshake error from [::1]:54947: EOF
+2023/07/21 15:11:06 cookies.go:31: [::1]:54948 POST /salarymatrix
+2023/07/21 15:11:44 cookies.go:31: [::1]:54948 POST /salarymatrix
+2023/07/21 15:12:37 cookies.go:31: [::1]:54948 POST /salarymatrix
+2023/07/21 15:12:58 cookies.go:31: [::1]:54948 GET /salarymatrix
+2023/07/21 15:13:30 cookies.go:31: [::1]:54948 POST /employee
+2023/07/21 15:13:54 cookies.go:31: [::1]:54948 POST /employee
+2023/07/21 15:14:19 cookies.go:31: [::1]:54948 POST /employee
+2023/07/21 15:14:37 cookies.go:31: [::1]:54948 GET /employee
+2023/07/21 15:14:56 cookies.go:31: [::1]:54948 POST /employee
+2023/07/21 15:15:00 cookies.go:31: [::1]:54948 GET /employee
+2023/07/21 15:15:46 cookies.go:31: [::1]:54948 POST /payroll
+2023/07/21 15:16:04 cookies.go:31: [::1]:54948 GET /payroll?employeeId=employ-4a8b1eb9-9cc9-434b-801d-c885ad4a4616
+2023/07/21 15:16:27 cookies.go:31: [::1]:54948 GET /payroll
+2023/07/21 15:16:46 server.go:3217: http: TLS handshake error from [::1]:55008: remote error: tls: unknown certificate
+2023/07/21 15:16:46 cookies.go:31: [::1]:55009 GET /payroll?download=true
+2023/07/21 15:17:15 cookies.go:31: [::1]:54948 GET /cookies
+2023/07/21 15:17:41 cookies.go:31: [::1]:54948 GET /cookies
+2023/07/21 15:17:55 cookies.go:31: [::1]:54948 GET /payroll
